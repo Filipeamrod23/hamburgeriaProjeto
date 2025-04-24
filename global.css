@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Spongeboy';
+    src: url('./Spongeboy\ Me\ Bob.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --vermelho: #ff343e;
+    --azul: #1e90ff;
+    --verde: #4b9f4d;
+    --marrom: #6f4f37;
+    --amarelo: #f7e02e;
+}
+
+body{
+    background: url('./spongeBOB_fundo.webp');
+    margin: 0;
+    padding: 0;
+
+}
+
+.header{
+    background-color:  var(--amarelo);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+    align-items: center;
+}
+#image-logo{
+    width: 80px;
+
+}
+
+.header-menu{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    color: var(--vermelho);
+    font-weight: bolder;
+    font-family: 'Spongeboy', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+.header-menu li{
+    border-bottom: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+.header-menu li a{
+    color: var(--vermelho);
+    text-decoration: none;
+}
+.header-menu li:hover{
+    border-bottom: 2px solid var(--vermelho);
+}
+
+#image-banner{
+    width: 100%;
+    object-fit: cover;
+}
+.box-discount{
+    position: relative;
+}
+.button-discount{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    background-color: var(--verde);
+    padding: 8px;
+    border: none;
+    color: whitesmoke;
+    font-family: 'Spongeboy', sans-serif;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}   
+.button-discount:hover{
+    transform: scale(1.1);
+}
+.button-discount:active{
+    transform: scale(1);
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    transition: opacity 0.3s ease-out; /* Transição suave */
+}
+
+.modal:target{
+    opacity: 1;
+}
+
+.modal.show {
+    display: block;
+    opacity: 1; /* Visível com transição */
+}
+.modal-content{
+    background-color: var(--amarelo);
+    padding: 16px;
+    border-radius: 20px;
+    color: var(--vermelho);
+    font-family: 'Spongeboy', sans-serif;
+    font-size: 20px;
+    margin-left: 40%;
+    border: solid 1px var(--vermelho);
+    position: relative;
+    margin-top: 19%;
+    width: 20%;
+}
+.close-button{
+    background-color: var(--vermelho);
+    padding: 5px 8px;
+    border-radius: 8px;
+    color: whitesmoke;
+    position: absolute;
+    right: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+.close-button:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}

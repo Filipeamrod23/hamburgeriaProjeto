@@ -1,0 +1,7 @@
+.items-menu{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 32px 0;
+    flex-wrap: wrap;
+}
