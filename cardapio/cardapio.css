@@ -7,6 +7,7 @@
 }
 .carrinho-modal{
     position: fixed;
+    display: none;
     z-index: 999;
     left: 0;
     top: 0;
@@ -24,4 +25,19 @@
     padding: 16px;
     border-radius: 18px;
     font-weight: bolder;
+}
+.fechar{
+    background-color: var(--vermelho);
+    padding: 5px 8px;
+    border-radius: 8px;
+    color: whitesmoke;
+    position: absolute;
+    right: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+.fechar:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
 }
