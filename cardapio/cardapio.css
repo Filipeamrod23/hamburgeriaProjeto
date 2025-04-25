@@ -22,4 +22,6 @@
     left: 45%;
     top: 45%;
     padding: 16px;
+    border-radius: 18px;
+    font-weight: bolder;
 }
