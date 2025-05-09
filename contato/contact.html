@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../global.css">
     <link rel="stylesheet" href="./contact.css">
+
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>Contato</title>
 </head>
+
 <body>
     <header class="header">
         <img id="image-logo" src="../mrKrabs_logoKrustyKrab.webp" alt="">
@@ -18,19 +21,25 @@
             <li><a href="./contact.html">Contato</a></li>
         </ul>
     </header>
-    
-<div class="container-form">
-    <h1>Faça sua reserva!</h1>
-    <form class="form">
-        <input type="text" placeholder="Nome" id="">
-        <input type="text" placeholder="Idade" id="">
-        <input type="text" placeholder="Número de pessoas" id="">
-        <button>Enviar</button>
-    </form>
 
-    <div class="schedule">
-        
+    <div class="container-form">
+        <h1>Faça sua reserva!</h1>
+        <form class="form">
+            <input type="text" placeholder="Nome" id="input-name">
+            <input type="text" placeholder="Idade" id="input-age">
+            <input type="text" placeholder="Número de Telefone" id="input-contact">
+            <input type="text" placeholder="Número de pessoas" id="input-number">
+            <button type="button" class="button-schedule">AGENDAR</button>
+        </form>
+        <div class="container-schedule">
+            <h2 class="schedule-title"></h2>
+            <p class="schedule-name"></p>
+            <p class="schedule-age"></p>
+            <p class="schedule-contact"></p>
+            <p class="schedule-number"></p>
+        </div>
     </div>
-</div>
+    <script src="./contact.js"></script>
 </body>
+
 </html>
