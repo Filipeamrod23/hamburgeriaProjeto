@@ -22,7 +22,6 @@ body{
 .header{
     background-color:  var(--amarelo);
     display: flex;
-    justify-content: space-between;
     padding: 0 32px;
     align-items: center;
 }
@@ -30,8 +29,11 @@ body{
     width: 80px;
 
 }
+.navbar{
+    width: 100%;
+}
 
-.header-menu{
+.navbar-nav{
     display: flex;
     list-style: none;
     gap: 16px;
@@ -41,10 +43,11 @@ body{
     font-size: 20px;
     cursor: pointer;
 }
-.header-menu li{
+.navbar-nav li,
+.navbar-link{
     border-bottom: 1px solid transparent;
+    color: var(--vermelho);
     transition: 0.3s ease-in-out;
-    color: rgba(0,0,0,.6);
     text-shadow: 
     1px 0px 1px #000000, 
     0px 1px 1px #222222, 
@@ -61,11 +64,12 @@ body{
     7px 6px 1px #000000;
   
 }
-.header-menu li a{
+.navbar-nav li a{
     color: var(--vermelho);
     text-decoration: none;
 }
-.header-menu li:hover{
+.navbar-nav li:hover, .navbar-link:hover{
+    color: var(--vermelho) !important;
     transform: scale(1.1);
 }
 
@@ -146,4 +150,17 @@ body{
 .close-button:hover{
     transform: scale(1.1);
     opacity: 0.8;
+}
+/* 480 máximo
+481 à 768px tablet
+769 - 1279 laptops
+1280 laptops ou monitores grandes */
+@media only screen and (max-width: 1279px) {
+    
+}
+@media only screen and (max-width: 769px) {
+    
+}
+@media only screen and (max-width: 480px) {
+    
 }
