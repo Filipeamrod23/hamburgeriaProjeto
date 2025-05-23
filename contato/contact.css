@@ -1,20 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
-.navbar-nav {
-    display: flex;
-    list-style: none;
-    gap: 16px;
-    color: var(--vermelho);
-    font-weight: bolder;
-    font-family: 'Spongeboy', sans-serif;
-    font-size: 20px;
-    cursor: pointer;
+body{
+    background-color: var(--bege);
 }
-
 .container-form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 32px;
 }
 
 .container-form h1 {
@@ -42,9 +34,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(233, 10, 10, 0.747);
+    background-color: var(--vermelho);
     padding: 48px;
     gap: 16px;
+    margin-top: 32px;
     border-radius: 16px;
 }
 
@@ -101,6 +94,10 @@
 .form button:hover::after {
     opacity: 1;
     transform: scale(1, 1);
+}
+.form-schedule{
+    display: flex;
+    gap: 32px;
 }
 .container-schedule{
     margin-top: 32px;
